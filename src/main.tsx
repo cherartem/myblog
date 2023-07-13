@@ -3,13 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { Layout } from "./layout";
 
 const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div className="text-red-500">Hello World</div>,
+    element: <Layout />,
   },
 ]);
 
